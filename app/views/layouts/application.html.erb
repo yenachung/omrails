@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Omrails</title>
+	  <title>Yena's Ruby on Rails Page</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
 	</head>
 
 	<body>
-		<%= link_to "Home", root_path %>
-		<%= link_to "About Us", about_path %>
-		<%= link_to "Lala", lala_path %>
+		<%= render 'layouts/header' %>
 
 		<%= yield %>
 
-		<br>
-		<hr>
-		<div class="footer">
-			<small>
-				<%= link_to "One Month Rails", "http://onemonthrails.com" %>
-				by <%= link_to "Mattan Griffel", "http://mattangriffel.com" %>
-			</small>
-		</div>
+		<%= render 'layouts/footer' %>
+
 	</body>
 
 </html>
