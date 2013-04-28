@@ -1,7 +1,12 @@
 Omrails::Application.routes.draw do
+get 'about' => 'pages#about'
+root :to => 'pages#home'
+get 'lala' => 'yena#lala'
+
+
 
   # root :to => 'welcome#index'
-  root :to => 'pages#home'
+  
 
   #get "yena/lala"
 
