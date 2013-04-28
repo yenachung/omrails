@@ -1,4 +1,6 @@
 Omrails::Application.routes.draw do
+  get "yena/lala"
+
   #get "pages/home"
 
   # The priority is based upon order of creation:
