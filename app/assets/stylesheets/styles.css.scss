@@ -1,4 +1,19 @@
+/*$baseFontFamily: 'Oleo Script Swash Caps', cursive;
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+*/
+
+
+$btnInfoBackground: red;
+$btnInfoBackgroundHighlight: black;
+$navbarBackgroundHighlight: red;
+$navbarBackground: white;
+
 @import 'bootstrap';
+
+/*.btn-info {
+	background: red;
+	width: 2000;
+}*/
 
 body {
 	padding-top: 60px;
@@ -6,7 +21,16 @@ body {
 
 @import 'bootstrap-responsive';
 
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
 .footer {
 
 	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
 }
