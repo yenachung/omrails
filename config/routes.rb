@@ -1,6 +1,8 @@
 Omrails::Application.routes.draw do
-get 'about' => 'pages#about'
+  devise_for :users
+
 root :to => 'pages#home'
+get 'about' => 'pages#about'
 get 'lala' => 'yena#lala'
 
 
